@@ -1,23 +1,26 @@
 import React from "react";
 import { connect } from "react-redux";
 
-const Jugadores = ({jugador                                                                                                                                                                                     }) => (
+const Jugadores = ({jugador}) => (
 <section>
     <h2>Jugadores</h2>
-<div className="contenedor-jugadores">
-    <article>
-        <img src="" alt="" />
-        <h3></h3>
+    <div className="contenedor-jugadores">
+        {jugador.map(j=>(
+        <article className="jugador">
+        <img src="j.foto" alt="j.nombre" />
+        <h3>{j.nombre}</h3>
         <div>
-        <button></button>
-        <button></button>
+        <button>Titular</button>
+        <button>Suplente</button>
         </div>
-    </article>
+       </article>))}
+       
 </div>
 </section>
 )
-
-const mapStateToProps =state =>({
+const mapStateToProps = state =>({
     jugador: state.jugadores
 })
+const mapDispatchToProps = dispatch => ({})
+
 export default connect(mapStateToProps,mapDispatchToProps)(Jugadores)

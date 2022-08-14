@@ -1,6 +1,7 @@
 import React from "react";
 import { Provider } from 'react-redux';
-import stote from "./stote";
+import store from "./store";
+import Jugadores from "./components/jugadores";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <div >
       <h1>Edmanager</h1>
      <Jugadores />
-     <EquipoSelecto/>
+     
     </div>
     </Provider>
   );
