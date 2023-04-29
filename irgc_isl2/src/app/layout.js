@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
 
       <head>
-        <title>next 13 :3</title>
+        <title>next 13</title>
       </head>
       <body>
         <header>
