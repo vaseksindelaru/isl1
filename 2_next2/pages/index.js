@@ -6,7 +6,7 @@
 export default function Home() {
   return (
     <div>
-      <p>helo</p>
+      <p>helo helo</p>
     </div>
   )
 }
