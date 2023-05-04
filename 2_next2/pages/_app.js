@@ -4,10 +4,7 @@ import reduxStore from "../redux/store"
 export default function App({ Component, pageProps }) {
   return (
    <Provider store={reduxStore}>
-
-
-
-   <Component {...pageProps} />
+ <Component {...pageProps} />
    </Provider>
 
 
