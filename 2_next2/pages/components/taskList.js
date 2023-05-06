@@ -7,7 +7,7 @@ export default function TaskList () {
         <div>
             {
                 tasks.map(task => (
-                    <div key={tasks.id}>
+                    <div key={task.id}>
                         <h3>{task.nombre}</h3>
                     </div>
 
