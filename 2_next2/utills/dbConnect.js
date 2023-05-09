@@ -2,10 +2,23 @@
 import {connect,connection} from 'mongoose'
 
 //const URI_MONGO = process.env.URI_MONGO
-export async function conectardb () {
-const db = await connect (process.env.URI_MONGO)
-console.log(db.connections[0].readyState)
+
+
+const conn = {
+    isConnected: false
 }
+
+export async function conectardb () {
+
+if (conn.isConnected) return;
+
+
+const db = await connect (process.env.URI_MONGO)
+conn.isConnected = db.connections[0].readyState
+console.log(db.connection.db.databaseName)
+}
+
+
 connection.on("connected", () =>{
     console.log ("connected 👋")
 })

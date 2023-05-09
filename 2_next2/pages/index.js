@@ -1,8 +1,8 @@
 
-import conectarDB from "@/lib/dbConnect";
+
 import TaskForm from "./components/taskForm";
 import TaskList from "./components/taskList";
-import conectardb from "@/lib/dbConnect";
+
 
 
 export default function Home() {
