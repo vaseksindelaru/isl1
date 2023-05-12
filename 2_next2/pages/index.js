@@ -1,22 +1,17 @@
 
-
-import TaskForm from "./components/taskForm";
-import TaskList from "./components/taskList";
-
+import Head from "next/head";
+import EpicGame from "./components/EpicGame";
 
 
 export default function Home() {
   return(
-  <div>
-  
-    
-      <h1 className="text-3x1 font-bold underline">Home</h1>
-      <TaskForm />
-      <TaskList />
-     
+  <div >
+  <Head>
+ <title>Home</title>
+ </Head>  
+  <EpicGame />
     </div>
-   
-  )
+    )
 }
 
 
