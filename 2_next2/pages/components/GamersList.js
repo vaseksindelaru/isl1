@@ -10,16 +10,22 @@ return (
 <section>
   <div>
 
-<h2>GamersList</h2>
+<h2 className='text-gray-300 '>GamersList</h2>
 { gamers.map ((g,index) => ( 
 
 <article key={index} className='jugadores'>
-        <div>
-       <img src={g.foto} alt={g.name} ></img>
-        <h3>{g .name}</h3>
-        </div>
-    
-          <button onClick={()=> gamersDispatch(selectTask(g))}>add</button>
+       <ul>
+        <li>
+        <a href='#' className='text-gray-300  flex gap-4 hover:bg-slate-600 py-3 px-4 rounded-xl transition-colors '>
+       <img src={g.foto} alt={g.name} className = 'w-12 h-12 object-cover rounded-full '></img>
+        
+       {g .name}
+      </a>
+      <button  onClick={()=> gamersDispatch(selectTask(g))} className=' rounded-md text-gray-300 bg-blue-600' >add</button>
+        
+        </li>
+    </ul>
+          
 </article>
        
  
