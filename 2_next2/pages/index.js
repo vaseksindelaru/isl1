@@ -1,22 +1,14 @@
 
 
-import TaskForm from "./components/taskForm";
-import TaskList from "./components/taskList";
+import Layout from "./Layout";
 
 
 
 export default function Home() {
   return(
-  <div>
-  
-    
-      <h1 className="text-3x1 font-bold underline">Home</h1>
-      <TaskForm />
-      <TaskList />
-     
-    </div>
-   
-  )
+  <Layout>
+    <h1>Home</h1>
+    </Layout>)
 }
 
 

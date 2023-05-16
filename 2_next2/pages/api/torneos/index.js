@@ -1,4 +1,5 @@
-import {conectardb} from "utills/dbConnect"
+/* eslint-disable @next/next/no-img-element */
+/*import {conectardb} from "utills/dbConnect"
 import Task from "../../../models/task"
 conectardb()
 
@@ -17,7 +18,7 @@ export default async function handler(req, res) {
         return res.status(201).json(savedTask);
     default:
         return res.status(400).json({msg:'this method is not '})
-}
+} }*/
 
+//import React from 'react'
 
-  }
