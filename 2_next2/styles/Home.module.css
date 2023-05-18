@@ -1,0 +1,14 @@
+.header {
+    background-color:blue 
+}
+.shadow {
+    box-shadow: 0 0 100px rgba(176, 186, 190, 0.5);
+}
+
+
+.bordes {
+
+    height: 150px;
+    background: linear-gradient(to top, rgba(255, 122, 89,1), rgba(255, 122, 89,0));
+  
+  }

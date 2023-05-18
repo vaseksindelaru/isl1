@@ -10,10 +10,7 @@ export default function Game() {
   <Layout>
     <div className="text-white">
     <h1>Game</h1>
-    </div>
-  </Layout>
-  )
-}
+    </div>"text-white "
 
 export async function getStaticPaths(){
   try {
@@ -48,6 +45,7 @@ return {
 }
 }
 */
+import styles from '../../styles/Home.module.css' 
 import Layout from "../Layout";
 import React from 'react'
 import {useRouter} from 'next/router'
@@ -60,18 +58,24 @@ export default function Game({gameDiscower}) {
   console.log(gameDiscower)
   return (
     
-  <Layout>
-    <div className="text-white">
+  <Layout >
+    <div  >hHeader styles
+    <div >
     {
         gameDiscower.map((gam) => {
           return(
-        <div key={gam.id}>
+        <div key={gam.id} >
+
+        <img src={gam.thumbnail} alt=''/>
+
 
         <p>{gam.title}</p>
-        <img src={gam.thumbnail} alt=''/>
+        
+        <div>gg</div>
         </div>)
 })
         }
+        </div>
      </div>
   </Layout>
   )

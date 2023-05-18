@@ -1,17 +1,24 @@
+import MainLayout from "@/layouts/mainLayout"
 
 
-import Layout from "./Layout";
 
 
 
 export default function Home() {
   return(
-  <Layout>
-    <h1>Home</h1>
-    </Layout>)
+  
+    <h1>Home</h1>)
+  
 }
 
+Home.getLayout = function getLayout(page) {
+return (
+  <MainLayout>
+    {page}
+  </MainLayout>
+)
 
+}
 /*export async function getServerSideProps(){
   try{
 await conectardb()
