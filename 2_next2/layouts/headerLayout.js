@@ -83,17 +83,11 @@ export const HeaderLayout = ({children}) => {
 </header>
    
    
-      <header className='text-gray-300 fixed  pl-[80px]  flex items-start justify-between p-8' >
-      
-      <div className='pt-[230px]'>
-      <div className={styles.bordes}>  
-      </div> 
-      </div>
-     </header>
-        
+
+     
         <main className='lg:pl-[200px] p-8 pt-20 bg-grey-300'>
         HeaderLayout
-          {children}
+        {children} 
         </main>
  
 

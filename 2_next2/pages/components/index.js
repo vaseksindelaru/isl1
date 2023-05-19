@@ -1,11 +1,12 @@
-import Layout from "../Layout";
+
+import { HeaderLayout } from "@/layouts/headerLayout";
 import Link from "next/link";
 
 export default function GamesList({gamesNuevos}) {
 
     console.log(gamesNuevos)
     return (
-<Layout>
+<HeaderLayout>
     <div>
         {
         gamesNuevos.map((gam) => ( 
@@ -22,7 +23,7 @@ export default function GamesList({gamesNuevos}) {
         
          
     </div>
-    </Layout> 
+    </HeaderLayout>
     )
 }
 
