@@ -49,7 +49,7 @@ import styles from '../../styles/Home.module.css'
 
 import React from 'react'
 import {useRouter} from 'next/router'
-import MainLayout from '@/layouts/mainLayout';
+import GameLayout from '@/layouts/gameLayout';
 
 
 
@@ -76,14 +76,14 @@ export default function Game({gameDiscower}) {
 Game.getLayout = function getLayout(page) {
   return (
 <div>
-    <MainLayout>
+    <GameLayout>
     
  
 
 
     {page}
  
-  </MainLayout>
+  </GameLayout>
   </div>
 )
   }

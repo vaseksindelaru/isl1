@@ -1,7 +1,7 @@
 import React from 'react'
 import { CiMenuFries } from "react-icons/ci" 
 import styles from '../styles/Home.module.css'
-import MainLayout from '@/layouts/mainLayout';
+import MainLayout from '@/layouts/gameLayout';
 //dropdown
 import { Menu, MenuItem, MenuButton } from '@szhsin/react-menu';
 import '@szhsin/react-menu/dist/index.css';

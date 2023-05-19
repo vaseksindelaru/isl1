@@ -7,14 +7,19 @@ export default function GamesList({gamesNuevos}) {
     console.log(gamesNuevos)
     return (
 <HeaderLayout>
-    <div>
+<div className="grid lg:grid-cols-5">
+
+  
+</div>
+
+    <div className="grid grid-cols-4 gap-8 ">
         {
         gamesNuevos.map((gam) => ( 
         <div key={gam.id} className="text-white">
        <Link href="games/[game]" as={`/games/${gam.ruta}`}>
        
         <p>{gam.title}</p>
-        <img src={gam.thumbnail} alt=''/>
+        <img src={gam.thumbnail} alt=''className="rounded-xl"/>
         
         </Link>
         </div>

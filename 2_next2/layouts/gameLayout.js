@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 import { HeaderLayout } from './headerLayout'
 
 
-const MainLayout = ({children}) => {
+const GameLayout = ({children}) => {
   return (
     <div className=''>
 
@@ -25,4 +25,4 @@ const MainLayout = ({children}) => {
   )
 }
 
-export default MainLayout
+export default GameLayout
