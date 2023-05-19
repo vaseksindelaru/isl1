@@ -1,11 +1,17 @@
 import React from 'react'
-import PerfilUser from '@/pages/components/PerfilUser'
+
+import { HeaderLayout } from './headerLayout'
+
 
 const MainLayout = ({children}) => {
   return (
-    <div>
-        <PerfilUser/>
+    <div className=''>
+        MainLayout
         {children}
+        <HeaderLayout />
+      
+        
+        
     </div>
   )
 }

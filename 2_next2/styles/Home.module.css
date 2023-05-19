@@ -7,8 +7,17 @@
 
 
 .bordes {
-
-    height: 150px;
-    background: linear-gradient(to top, rgba(255, 122, 89,1), rgba(255, 122, 89,0));
+width: 1200px;
+    height: 100px;
+    background: linear-gradient( to top,#171C26 10%, rgba(173, 167, 165, 0));
   
   }
+  /* #0E121B;
+  -cm-colors-bg0: #0E121B;
+    --cm-colors-bg1: #171C26;
+    --cm-colors-bg2: #1F2633;
+    --cm-colors-bg3: #2F384C;
+    --cm-colors-bg4: #364259;
+    --cm-colors-fg1: rgba(255,255,255,1);
+    --cm-colors-fg2: #95ACDA;
+    --cm-colors-fg3: #60759F;*/

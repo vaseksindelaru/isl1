@@ -46,40 +46,50 @@ return {
 }
 */
 import styles from '../../styles/Home.module.css' 
-import Layout from "../Layout";
+
 import React from 'react'
 import {useRouter} from 'next/router'
+
+import Layout from '../Layout';
+import { HeaderLayout } from '@/layouts/headerLayout';
 
 
 
 export default function Game({gameDiscower}) {
   const router = useRouter()
-  console.log(router)
-  console.log(gameDiscower)
+
   return (
-    
-  <Layout >
-    <div  >hHeader styles
-    <div >
-    {
+  <div>
+    <div>Ruta dinamica</div >
+  
+      {
         gameDiscower.map((gam) => {
           return(
-        <div key={gam.id} >
-
+        <div key={gam.id} className=" ">
+ <p>{gam.title}</p>
         <img src={gam.thumbnail} alt=''/>
-
-
-        <p>{gam.title}</p>
-        
-        <div>gg</div>
-        </div>)
+         </div>)
 })
         }
-        </div>
-     </div>
-  </Layout>
-  )
+     
+  </div>)
 }
+
+Game.getLayout = function getLayout(page) {
+  return (
+<div>
+    <HeaderLayout>
+    
+ 
+
+
+    {page}
+ 
+  </HeaderLayout>
+  </div>
+)
+  }
+
 
 export  const getServerSideProps = async ({query}) =>{ 
   
@@ -99,7 +109,7 @@ const gamesNuevos = games.map((gamNew) => {
 })
 
 const gameDiscower = gamesNuevos.filter((gam) => gam.ruta === query.game)
-console.log('gameDiscower', gameDiscower)
+
 
 return {
   props:{gameDiscower: gameDiscower},
