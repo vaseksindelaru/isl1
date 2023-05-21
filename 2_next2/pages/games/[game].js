@@ -63,8 +63,8 @@ export default function Game({gameDiscower}) {
       {
         gameDiscower.map((gam) => {
           return(
-        <div key={gam.id} className=" ">
- <p>{gam.title}</p>
+        <div key={gam.id} class="style.wrapImg">
+        <p>{gam.title}</p>
         <img src={gam.thumbnail} alt=''/>
          </div>)
 })
